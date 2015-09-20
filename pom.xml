@@ -44,25 +44,25 @@
 				<artifactId>jmeter-graph-maven-plugin</artifactId>
 				<version>0.1.0</version>
 				<configuration>
-					<inputFile>${basedir}/target/jmeter/report/Workshop.jtl</inputFile>
+					<inputFile>${project.build.directory}/target/jmeter/report/Workshop.jtl</inputFile>
 					<graphs>
 						<graph>
 							<pluginType>ThreadsStateOverTime</pluginType>
 				<width>800</width>
               <height>600</height>
-              <outputFile>${basedir}/target/jmeter/report/Workshop-ThreadsStateOverTime.png</outputFile>
+              <outputFile>${project.build.directory}/target/jmeter/report/Workshop-ThreadsStateOverTime.png</outputFile>
             </graph>
 			      <graph>
                             <pluginType>ResponseTimesOverTime</pluginType>
                             <width>800</width>
                             <height>600</height>
-                            <outputFile>${basedir}/target/jmeter/report/Workshop-ResponseTimesOverTime.png</outputFile>
+                            <outputFile>${project.build.directory}/target/jmeter/report/Workshop-ResponseTimesOverTime.png</outputFile>
                         </graph>
                         <graph>
                             <pluginType>TransactionsPerSecond</pluginType>
                             <width>800</width>
                             <height>600</height>
-                            <outputFile>${basedir}/target/jmeter/report/Workshop-TransactionsPerSecond.png</outputFile>
+                            <outputFile>${project.build.directory}/target/jmeter/report/Workshop-TransactionsPerSecond.png</outputFile>
                         </graph>
             <!-- ... you can declare more <graph>-elements here -->
           </graphs>
