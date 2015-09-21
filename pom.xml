@@ -29,7 +29,7 @@
 						<resultsFileNameDateFormat></resultsFileNameDateFormat>
 						<testResultsTimestamp>false</testResultsTimestamp>
 					<propertiesGlobal>
-<!-- supplied by jenkins / sys props -->
+
 <users>${env.users}</users>
 <iterations>${env.iterations}</iterations>
 <rampup>${env.rampup}</rampup>
